@@ -1,0 +1,259 @@
+@import "blueprint/reset";
+@import "partials/base";
+@import "compass/css3/gradient";
+@import "compass/utilities/lists/horizontal-list";
+@import "compass/css3/border-radius";
+@import "compass/css3/text-shadow";
+@import "compass/css3/box-shadow";
+@import "compass/css3/transition";
+@import "blueprint";
+@import "blueprint/scaffolding";
+
+@include blueprint-scaffolding("body.bp");
+
+$header_text_color: #B0CF21;
+
+body.bp {
+  @include blueprint-typography(true);
+  @include blueprint-utilities;
+  @include blueprint-debug;
+  @include blueprint-interaction;
+  margin: 0px;
+  background: url(../images/WhiteTexture.jpg);
+}
+
+form.bp {
+  @include blueprint-form; 
+}
+
+body.two-col {
+  .container {
+    //background-image: url(../images/grid.png);
+    @include container; 
+  }
+  a {
+    text-decoration: none;
+    @include transition(all,0.2s, ease-in-out);
+  }
+  header#site_head {
+    position: absolute;
+    width: 100%;
+    color: $header_text_color;
+    z-index: 999;
+    a {
+      color: $header_text_color;
+    }
+    div#head_container {
+      padding-top: 20px;
+      @include linear-gradient(color-stops(#010d26, #031740));
+      @include box-shadow();
+      border-bottom: 1px solid #777;
+    }
+
+    div#logo_container {
+      font-size: 1.2em;
+      padding-bottom: 10px;
+      div#logo {
+        @include column(8);
+        background: url(../images/greenlogo.png) no-repeat;
+        text-indent: -9999px;
+        height: 60px;
+      }
+      div#actions {
+        @include column(8);
+        padding-top: 15px;
+      }
+      nav {
+        @include column(8, true);
+        padding-top: 15px;
+        ul {
+          float: right;
+          @include horizontal-list;
+          overflow: visible;
+          li {
+            a {
+              @include border-radius(8px);
+              padding: 5px 5px;
+            }
+            a:hover, a.current {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+    
+
+    div#panel {
+      height: 180px;
+      display: none;
+
+      div#about {
+        @include column(8);
+        height: 100%;
+        font-size: 1.1em;
+        li {
+          list-style: none;
+        }
+      }
+
+      div#contact {
+        @include column(16, true);
+        input[type="text"] {
+          width: 95%;
+        }
+        input[type="submit"] {
+          outline-width: 0;
+          border: 1px solid #000;
+          border-radius: 50px;
+          -moz-border-radius: 50px;
+			
+          -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+          -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5),
+            inset 0px 1px 0px rgba(255, 255, 255, 0.5);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5),
+            inset 0px 1px 0px rgba(255, 255, 255, 0.5);
+			
+          -webkit-transition: background 0.2s ease-in-out,
+            color 0.2s ease-in-out,
+            -webkit-box-shadow 0.2s ease-in-out;
+          background-image: -webkit-gradient(linear, left top, left bottom,
+              color-stop(0.0, rgba(255, 255, 255, 0.8)),
+              color-stop(0.01, rgba(255, 255, 255, 0.6)),
+              color-stop(0.4, rgba(255, 255, 255, 0.3)),
+              color-stop(0.4, rgba(255, 255, 255, 0.2)),
+              color-stop(1.0, rgba(255, 255, 255, 0.0)));
+          background-image: -moz-linear-gradient(top,
+              rgba(255, 255, 255, 0.6) 0%,
+              rgba(255, 255, 255, 0.3) 40%,
+              rgba(255, 255, 255, 0.2) 40%,
+              rgba(255, 255, 255, 0.0) 100%);
+
+          background-color: $header_text_color;
+          color: black;
+          text-shadow: rgba(0, 0, 0, 0.5) 0px -1px 0px;
+        }
+        input[type="submit"]:hover {
+          -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.9);
+          -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.9),
+            inset 0px 1px 0px rgba(255, 255, 255, 0.5);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9),
+            inset 0px 1px 0px rgba(255, 255, 255, 0.5);
+          background-color: $header_text_color + #200000;
+        }
+        input[type="submit"]:active, button:active {
+          background-color: $header_text_color - #200;
+          -webkit-transition-duration: 0.0s;
+        }
+
+        textarea {
+          resize:none;
+          width: 95%; 
+          height: 8.25em;
+        }
+        div#contact-left {
+          @include column(8);
+        }
+        div#contact-right {
+          @include column(8, true);
+        }
+      }
+
+    }
+
+    div#tab {
+      height: 3em;
+      display:block;
+      div#pulldown {
+        text-align: center;
+        background: #B0CF21;
+        padding: 5px;
+        @include push(16);
+        @include column(4);
+        @include border-bottom-radius(8px);
+        @include box-shadow;
+        border: 1px solid #777;
+        border-top: 0px;
+        a {
+          color: black;
+        }
+        a:hover {
+          color: white;
+          @include text-shadow();
+        } 
+      }
+
+      a#close {
+        display: none;
+      }
+    }
+  }
+
+  section#page {
+    margin-top: 40px;
+  }
+
+  /* Articles */
+  article {
+    div.article_date {
+      @include column(2);
+      height: 5em;
+      position: relative;
+      @include border(black, 5px);
+      .day, .month, .year {
+        position: absolute;
+      }
+      span.day { 
+        font-size: 30px;
+        top: 15px;
+      }
+      span.month { 
+        top: 0;
+        left: 0;
+        font-size: 18px;
+      }
+      span.year {
+          top: 15px;
+          right: 0px;
+          font-size: 20px;
+          -webkit-transform: rotate(-90deg);
+      }    
+    }
+    div.article_title {
+      h2 {
+        margin-bottom: 0em; 
+      }
+    }
+    div.codeblock {
+      pre {
+        margin-left: 35px;
+        border: 1px solid black;
+        border-left: 5px solid black;
+        padding-left: 10px;
+      }
+      span.type {
+        position: absolute;
+        -webkit-transform: rotate(-90deg);
+      }
+    }
+    
+  }
+
+  asside {
+  }
+
+  footer {
+  }
+
+  asside#site_sidebar {
+    $sidebar_columns: 8;
+    @include column($sidebar_columns, true); 
+  }
+  article {
+    $content_columns: 16;
+    @include column($content_columns); 
+  } 
+  section#main_content {
+    padding-top: 150px;
+  } 
+}
