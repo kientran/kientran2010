@@ -2,10 +2,7 @@
 @import "partials/base";
 @import "compass/css3/gradient";
 @import "compass/utilities/lists/horizontal-list";
-@import "compass/css3/border-radius";
-@import "compass/css3/text-shadow";
-@import "compass/css3/box-shadow";
-@import "compass/css3/transition";
+@import "compass/css3";
 @import "blueprint";
 @import "blueprint/scaffolding";
 
@@ -38,6 +35,8 @@ body.two-col {
   header#site_head {
     position: absolute;
     width: 100%;
+    min-width: 960px;
+    overflow: hidden;
     color: $header_text_color;
     z-index: 999;
     a {
@@ -46,7 +45,7 @@ body.two-col {
     div#head_container {
       padding-top: 20px;
       @include linear-gradient(color-stops(#010d26, #031740));
-      @include box-shadow();
+      @include box-shadow(#333,0px,1px,5px);
       border-bottom: 1px solid #777;
     }
 
@@ -102,48 +101,32 @@ body.two-col {
         input[type="text"] {
           width: 95%;
         }
-        input[type="submit"] {
+        input[type="button"] {
           outline-width: 0;
           border: 1px solid #000;
           border-radius: 50px;
           -moz-border-radius: 50px;
 			
-          -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
-          -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5),
-            inset 0px 1px 0px rgba(255, 255, 255, 0.5);
-          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5),
-            inset 0px 1px 0px rgba(255, 255, 255, 0.5);
-			
-          -webkit-transition: background 0.2s ease-in-out,
-            color 0.2s ease-in-out,
-            -webkit-box-shadow 0.2s ease-in-out;
-          background-image: -webkit-gradient(linear, left top, left bottom,
-              color-stop(0.0, rgba(255, 255, 255, 0.8)),
-              color-stop(0.01, rgba(255, 255, 255, 0.6)),
-              color-stop(0.4, rgba(255, 255, 255, 0.3)),
-              color-stop(0.4, rgba(255, 255, 255, 0.2)),
-              color-stop(1.0, rgba(255, 255, 255, 0.0)));
-          background-image: -moz-linear-gradient(top,
-              rgba(255, 255, 255, 0.6) 0%,
-              rgba(255, 255, 255, 0.3) 40%,
-              rgba(255, 255, 255, 0.2) 40%,
-              rgba(255, 255, 255, 0.0) 100%);
-
+          @include box-shadow(rgba(0,0,0,0.5), 0px, 1px, 3px);
+          @include transition(all,0.2s, ease-in-out);
+          @include linear-gradient(color-stops(
+                  rgba(255, 255, 255, 0.8) 0%,
+                  rgba(255, 255, 255, 0.6) 1%,
+                  rgba(255, 255, 255, 0.3) 40%,
+                  rgba(255, 255, 255, 0.2) 40%,
+                  rgba(255, 255, 255, 0.0) 100%
+                ), "top" );
           background-color: $header_text_color;
           color: black;
           text-shadow: rgba(0, 0, 0, 0.5) 0px -1px 0px;
         }
-        input[type="submit"]:hover {
-          -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.9);
-          -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.9),
-            inset 0px 1px 0px rgba(255, 255, 255, 0.5);
-          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9),
-            inset 0px 1px 0px rgba(255, 255, 255, 0.5);
+        input[type="button"]:hover {
+          @include box-shadow(rgba(0,0,0,0.9), 0px, 1px, 3px);
           background-color: $header_text_color + #200000;
         }
-        input[type="submit"]:active, button:active {
+        input[type="button"]:active, button:active {
           background-color: $header_text_color - #200;
-          -webkit-transition-duration: 0.0s;
+          @include transition(0.0s);
         }
 
         textarea {
@@ -199,6 +182,8 @@ body.two-col {
       @include column(2);
       height: 5em;
       position: relative;
+      display: inline-block;
+
       @include border(black, 5px);
       .day, .month, .year {
         position: absolute;
@@ -216,12 +201,13 @@ body.two-col {
           top: 15px;
           right: 0px;
           font-size: 20px;
-          -webkit-transform: rotate(-90deg);
+          @include rotate(-90deg);
       }    
     }
     div.article_title {
-      h2 {
-        margin-bottom: 0em; 
+      h1 {
+        margin-bottom: 0.3em; 
+        margin-top: 0;
       }
     }
     div.codeblock {
@@ -233,7 +219,7 @@ body.two-col {
       }
       span.type {
         position: absolute;
-        -webkit-transform: rotate(-90deg);
+        @include rotate(-90deg);
       }
     }
     
@@ -242,7 +228,25 @@ body.two-col {
   asside {
   }
 
-  footer {
+  div#content {
+    padding-bottom: 80px;
+  }
+  footer#site_footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+  }
+  div#footer-container {
+    padding: 0px;
+    color: white;
+    height: 20px;
+   #footer-copyright {
+      @include column(8);
+    }
+    #footer-quote{
+      @include column(16, true);
+    }
   }
 
   asside#site_sidebar {
