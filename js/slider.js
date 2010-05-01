@@ -17,5 +17,35 @@ $(document).ready(function() {
         $("#pulldown a").toggle();
     }); 
         
+    // Fade Footer In
+
+    $(window).scroll(function(){
+//      var scrollTop = $(window).scrollTop();
+
+      var position = ($(document).scrollTop() + $(window).height())
+        - $(document).height();
+      if(position != 0)
+        $('#site_footer').stop().animate({'opacity':'0.0'},400);
+      else    
+        $('#site_footer').stop().animate({'opacity':'0.8'},400);
+      });
+
+    $('#site_footer').hover(
+      function (e) {
+        var position = ($(document).scrollTop() + $(window).height())
+        - $(document).height();
+        if(position != 0){
+          $('#site_footer').stop().animate({'opacity':'0.8'},400);
+        }
+      },
+        function (e) {
+        var position = ($(document).scrollTop() + $(window).height())
+        - $(document).height();
+        if(scrollTop != 0){
+          $('#site_footer').stop().animate({'opacity':'0.0'},400);
+        }
+      });
+
+
 });
 

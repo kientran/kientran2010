@@ -57,7 +57,8 @@ body.bp {
   color: #333333;
   font-size: 75%;
   margin: 0px;
-  background: url(../images/WhiteTexture.jpg);
+  background: #e4e6e5 url(../images/WhiteTexture2.jpg) repeat-x;
+  background-position: 0 80px;
 }
 /* line 54, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0.rc4/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 body.bp h1, body.bp h2, body.bp h3, body.bp h4, body.bp h5, body.bp h6 {
@@ -426,11 +427,11 @@ form.bp textarea {
   height: 250px;
 }
 
-/* line 26, ../src/screen.scss */
+/* line 28, ../src/screen.scss */
 body.two-col {
   /* Articles */
 }
-/* line 27, ../src/screen.scss */
+/* line 29, ../src/screen.scss */
 body.two-col .container {
   width: 950px;
   margin: 0 auto;
@@ -441,7 +442,7 @@ body.two-col .container {
 body.two-col .container {
   display: block;
 }
-/* line 31, ../src/screen.scss */
+/* line 33, ../src/screen.scss */
 body.two-col a {
   text-decoration: none;
   -moz-transition-property: all;
@@ -456,8 +457,13 @@ body.two-col a {
   -webkit-transition-timing-function: ease-in-out;
   -ms-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
+  font-weight: bold;
 }
-/* line 35, ../src/screen.scss */
+/* line 38, ../src/screen.scss */
+body.two-col a:hover {
+  color: #7d9c00;
+}
+/* line 41, ../src/screen.scss */
 body.two-col header#site_head {
   position: absolute;
   width: 100%;
@@ -466,11 +472,16 @@ body.two-col header#site_head {
   color: #b0cf21;
   z-index: 999;
 }
-/* line 42, ../src/screen.scss */
+/* line 49, ../src/screen.scss */
 body.two-col header#site_head a {
   color: #b0cf21;
+  font-weight: normal;
 }
-/* line 45, ../src/screen.scss */
+/* line 53, ../src/screen.scss */
+body.two-col header#site_head a:hover {
+  color: white;
+}
+/* line 56, ../src/screen.scss */
 body.two-col header#site_head div#head_container {
   padding-top: 20px;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #010d26), color-stop(100%, #031740));
@@ -481,13 +492,13 @@ body.two-col header#site_head div#head_container {
   box-shadow: #333333 0px 1px 5px;
   border-bottom: 1px solid #777;
 }
-/* line 52, ../src/screen.scss */
+/* line 63, ../src/screen.scss */
 body.two-col header#site_head div#logo_container {
   font-size: 1.2em;
   padding-bottom: 10px;
 }
-/* line 55, ../src/screen.scss */
-body.two-col header#site_head div#logo_container div#logo {
+/* line 66, ../src/screen.scss */
+body.two-col header#site_head div#logo_container div#logo a {
   display: inline;
   float: left;
   margin-right: 10px;
@@ -497,34 +508,53 @@ body.two-col header#site_head div#logo_container div#logo {
   height: 60px;
 }
 /* line 138, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0.rc4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.two-col header#site_head div#logo_container div#logo {
+* html body.two-col header#site_head div#logo_container div#logo a {
   overflow-x: hidden;
 }
-/* line 61, ../src/screen.scss */
+/* line 72, ../src/screen.scss */
 body.two-col header#site_head div#logo_container div#actions {
   display: inline;
   float: left;
   margin-right: 10px;
   width: 310px;
-  padding-top: 15px;
+  padding-top: 20px;
 }
 /* line 138, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0.rc4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body.two-col header#site_head div#logo_container div#actions {
   overflow-x: hidden;
 }
-/* line 65, ../src/screen.scss */
+/* line 75, ../src/screen.scss */
+body.two-col header#site_head div#logo_container div#actions a {
+  display: block;
+  float: left;
+  height: 18px;
+}
+/* line 80, ../src/screen.scss */
+body.two-col header#site_head div#logo_container div#actions a#twitter {
+  background: url(../images/twitter.png) no-repeat;
+  padding-left: 30px;
+  margin-left: 10px;
+}
+/* line 85, ../src/screen.scss */
+body.two-col header#site_head div#logo_container div#actions a#rss {
+  background: url(../images/rss.png) no-repeat;
+  padding-left: 25px;
+  padding-right: 10px;
+  border-right: 1px solid #b0cf21;
+}
+/* line 92, ../src/screen.scss */
 body.two-col header#site_head div#logo_container nav {
   display: inline;
   float: left;
   margin-right: 0;
   width: 310px;
-  padding-top: 15px;
+  padding-top: 20px;
 }
 /* line 138, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0.rc4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body.two-col header#site_head div#logo_container nav {
   overflow-x: hidden;
 }
-/* line 68, ../src/screen.scss */
+/* line 95, ../src/screen.scss */
 body.two-col header#site_head div#logo_container nav ul {
   float: right;
   margin: 0;
@@ -558,24 +588,16 @@ body.two-col header#site_head div#logo_container nav ul li:first-child, body.two
 body.two-col header#site_head div#logo_container nav ul li:last-child, body.two-col header#site_head div#logo_container nav ul li.last {
   padding-right: 0px;
 }
-/* line 73, ../src/screen.scss */
-body.two-col header#site_head div#logo_container nav ul li a {
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -ms-border-radius: 8px;
-  border-radius: 8px;
-  padding: 5px 5px;
+/* line 99, ../src/screen.scss */
+body.two-col header#site_head div#logo_container nav ul li {
+  padding: 0 5px;
 }
-/* line 77, ../src/screen.scss */
-body.two-col header#site_head div#logo_container nav ul li a:hover, body.two-col header#site_head div#logo_container nav ul li a.current {
-  color: white;
-}
-/* line 86, ../src/screen.scss */
+/* line 107, ../src/screen.scss */
 body.two-col header#site_head div#panel {
   height: 180px;
   display: none;
 }
-/* line 90, ../src/screen.scss */
+/* line 111, ../src/screen.scss */
 body.two-col header#site_head div#panel div#about {
   display: inline;
   float: left;
@@ -588,11 +610,11 @@ body.two-col header#site_head div#panel div#about {
 * html body.two-col header#site_head div#panel div#about {
   overflow-x: hidden;
 }
-/* line 94, ../src/screen.scss */
+/* line 115, ../src/screen.scss */
 body.two-col header#site_head div#panel div#about li {
   list-style: none;
 }
-/* line 99, ../src/screen.scss */
+/* line 120, ../src/screen.scss */
 body.two-col header#site_head div#panel div#contact {
   display: inline;
   float: left;
@@ -603,11 +625,11 @@ body.two-col header#site_head div#panel div#contact {
 * html body.two-col header#site_head div#panel div#contact {
   overflow-x: hidden;
 }
-/* line 101, ../src/screen.scss */
+/* line 122, ../src/screen.scss */
 body.two-col header#site_head div#panel div#contact input[type="text"] {
   width: 95%;
 }
-/* line 104, ../src/screen.scss */
+/* line 125, ../src/screen.scss */
 body.two-col header#site_head div#panel div#contact input[type="button"] {
   outline-width: 0;
   border: 1px solid #000;
@@ -635,7 +657,7 @@ body.two-col header#site_head div#panel div#contact input[type="button"] {
   color: black;
   text-shadow: rgba(0, 0, 0, 0.5) 0px -1px 0px;
 }
-/* line 123, ../src/screen.scss */
+/* line 144, ../src/screen.scss */
 body.two-col header#site_head div#panel div#contact input[type="button"]:hover {
   -moz-box-shadow: rgba(0, 0, 0, 0.9) 0px 1px 3px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.9) 0px 1px 3px;
@@ -643,7 +665,7 @@ body.two-col header#site_head div#panel div#contact input[type="button"]:hover {
   box-shadow: rgba(0, 0, 0, 0.9) 0px 1px 3px;
   background-color: #d0cf21;
 }
-/* line 127, ../src/screen.scss */
+/* line 148, ../src/screen.scss */
 body.two-col header#site_head div#panel div#contact input[type="button"]:active, body.two-col header#site_head div#panel div#contact button:active {
   background-color: #8ecf21;
   -moz-transition-property: 0s;
@@ -655,13 +677,13 @@ body.two-col header#site_head div#panel div#contact input[type="button"]:active,
   -ms-transition-duration: 1s;
   transition-duration: 1s;
 }
-/* line 132, ../src/screen.scss */
+/* line 153, ../src/screen.scss */
 body.two-col header#site_head div#panel div#contact textarea {
   resize: none;
   width: 95%;
   height: 8.25em;
 }
-/* line 137, ../src/screen.scss */
+/* line 158, ../src/screen.scss */
 body.two-col header#site_head div#panel div#contact div#contact-left {
   display: inline;
   float: left;
@@ -672,7 +694,7 @@ body.two-col header#site_head div#panel div#contact div#contact-left {
 * html body.two-col header#site_head div#panel div#contact div#contact-left {
   overflow-x: hidden;
 }
-/* line 140, ../src/screen.scss */
+/* line 161, ../src/screen.scss */
 body.two-col header#site_head div#panel div#contact div#contact-right {
   display: inline;
   float: left;
@@ -683,12 +705,12 @@ body.two-col header#site_head div#panel div#contact div#contact-right {
 * html body.two-col header#site_head div#panel div#contact div#contact-right {
   overflow-x: hidden;
 }
-/* line 147, ../src/screen.scss */
+/* line 168, ../src/screen.scss */
 body.two-col header#site_head div#tab {
   height: 3em;
   display: block;
 }
-/* line 150, ../src/screen.scss */
+/* line 171, ../src/screen.scss */
 body.two-col header#site_head div#tab div#pulldown {
   text-align: center;
   background: #B0CF21;
@@ -726,24 +748,25 @@ body.two-col header#site_head div#tab div#pulldown {
 * html body.two-col header#site_head div#tab div#pulldown {
   overflow-x: hidden;
 }
-/* line 160, ../src/screen.scss */
+/* line 181, ../src/screen.scss */
 body.two-col header#site_head div#tab div#pulldown a {
   color: black;
+  font-weight: bold;
 }
-/* line 163, ../src/screen.scss */
+/* line 185, ../src/screen.scss */
 body.two-col header#site_head div#tab div#pulldown a:hover {
   color: white;
   text-shadow: #aaaaaa 1px 1px 1px;
 }
-/* line 169, ../src/screen.scss */
+/* line 191, ../src/screen.scss */
 body.two-col header#site_head div#tab a#close {
   display: none;
 }
-/* line 175, ../src/screen.scss */
+/* line 197, ../src/screen.scss */
 body.two-col section#page {
   margin-top: 40px;
 }
-/* line 181, ../src/screen.scss */
+/* line 203, ../src/screen.scss */
 body.two-col article div.article_date {
   display: inline;
   float: left;
@@ -760,22 +783,22 @@ body.two-col article div.article_date {
 * html body.two-col article div.article_date {
   overflow-x: hidden;
 }
-/* line 188, ../src/screen.scss */
+/* line 210, ../src/screen.scss */
 body.two-col article div.article_date .day, body.two-col article div.article_date .month, body.two-col article div.article_date .year {
   position: absolute;
 }
-/* line 191, ../src/screen.scss */
+/* line 213, ../src/screen.scss */
 body.two-col article div.article_date span.day {
   font-size: 30px;
   top: 15px;
 }
-/* line 195, ../src/screen.scss */
+/* line 217, ../src/screen.scss */
 body.two-col article div.article_date span.month {
   top: 0;
   left: 0;
   font-size: 18px;
 }
-/* line 200, ../src/screen.scss */
+/* line 222, ../src/screen.scss */
 body.two-col article div.article_date span.year {
   top: 15px;
   right: 0px;
@@ -785,19 +808,24 @@ body.two-col article div.article_date span.year {
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }
-/* line 208, ../src/screen.scss */
+/* line 230, ../src/screen.scss */
 body.two-col article div.article_title h1 {
   margin-bottom: 0.3em;
   margin-top: 0;
 }
-/* line 214, ../src/screen.scss */
+/* line 235, ../src/screen.scss */
+body.two-col article div.article_tags {
+  border-bottom: 1px solid black;
+  margin-bottom: 1em;
+}
+/* line 240, ../src/screen.scss */
 body.two-col article div.codeblock pre {
   margin-left: 35px;
   border: 1px solid black;
   border-left: 5px solid black;
   padding-left: 10px;
 }
-/* line 220, ../src/screen.scss */
+/* line 246, ../src/screen.scss */
 body.two-col article div.codeblock span.type {
   position: absolute;
   -moz-transform: rotate(-90deg);
@@ -805,24 +833,30 @@ body.two-col article div.codeblock span.type {
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }
-/* line 231, ../src/screen.scss */
+/* line 257, ../src/screen.scss */
 body.two-col div#content {
   padding-bottom: 80px;
 }
-/* line 234, ../src/screen.scss */
+/* line 260, ../src/screen.scss */
 body.two-col footer#site_footer {
   position: fixed;
   bottom: 0px;
   width: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  background: black;
+  opacity: 0.8;
 }
-/* line 240, ../src/screen.scss */
+/* line 266, ../src/screen.scss */
+body.two-col footer#site_footer a {
+  color: white;
+  font-weight: normal;
+}
+/* line 271, ../src/screen.scss */
 body.two-col div#footer-container {
   padding: 0px;
   color: white;
   height: 20px;
 }
-/* line 244, ../src/screen.scss */
+/* line 275, ../src/screen.scss */
 body.two-col div#footer-container #footer-copyright {
   display: inline;
   float: left;
@@ -833,18 +867,19 @@ body.two-col div#footer-container #footer-copyright {
 * html body.two-col div#footer-container #footer-copyright {
   overflow-x: hidden;
 }
-/* line 247, ../src/screen.scss */
+/* line 278, ../src/screen.scss */
 body.two-col div#footer-container #footer-quote {
   display: inline;
   float: left;
   margin-right: 0;
-  width: 630px;
+  width: 310px;
+  text-align: right;
 }
 /* line 138, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0.rc4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body.two-col div#footer-container #footer-quote {
   overflow-x: hidden;
 }
-/* line 252, ../src/screen.scss */
+/* line 284, ../src/screen.scss */
 body.two-col asside#site_sidebar {
   display: inline;
   float: left;
@@ -855,7 +890,7 @@ body.two-col asside#site_sidebar {
 * html body.two-col asside#site_sidebar {
   overflow-x: hidden;
 }
-/* line 256, ../src/screen.scss */
+/* line 288, ../src/screen.scss */
 body.two-col article {
   display: inline;
   float: left;
@@ -866,7 +901,7 @@ body.two-col article {
 * html body.two-col article {
   overflow-x: hidden;
 }
-/* line 260, ../src/screen.scss */
+/* line 292, ../src/screen.scss */
 body.two-col section#main_content {
   padding-top: 150px;
 }

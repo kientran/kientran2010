@@ -16,7 +16,9 @@ body.bp {
   @include blueprint-debug;
   @include blueprint-interaction;
   margin: 0px;
-  background: url(../images/WhiteTexture.jpg);
+  //background: url(../images/WhiteTexture.jpg);
+  background: #e4e6e5 url(../images/WhiteTexture2.jpg) repeat-x;
+  background-position: 0 80px;
 }
 
 form.bp {
@@ -31,6 +33,10 @@ body.two-col {
   a {
     text-decoration: none;
     @include transition(all,0.2s, ease-in-out);
+    font-weight: bold;
+  }
+  a:hover {
+    color: $header_text_color - #333;
   }
   header#site_head {
     position: absolute;
@@ -39,8 +45,13 @@ body.two-col {
     overflow: hidden;
     color: $header_text_color;
     z-index: 999;
+    $headder_text_padding_top: 20px;
     a {
       color: $header_text_color;
+      font-weight: normal;
+    }
+    a:hover {
+       color: white;
     }
     div#head_container {
       padding-top: 20px;
@@ -52,7 +63,7 @@ body.two-col {
     div#logo_container {
       font-size: 1.2em;
       padding-bottom: 10px;
-      div#logo {
+      div#logo a {
         @include column(8);
         background: url(../images/greenlogo.png) no-repeat;
         text-indent: -9999px;
@@ -60,23 +71,33 @@ body.two-col {
       }
       div#actions {
         @include column(8);
-        padding-top: 15px;
+        padding-top: $headder_text_padding_top;
+        a {
+          display: block;
+          float: left;
+          height: 18px;
+         }
+        a#twitter {
+          background: url(../images/twitter.png) no-repeat;
+          padding-left: 30px;
+          margin-left: 10px;
+        }
+        a#rss {
+          background: url(../images/rss.png) no-repeat;
+          padding-left: 25px;
+          padding-right: 10px;
+          border-right: 1px solid $header_text_color;
+        }
       }
       nav {
         @include column(8, true);
-        padding-top: 15px;
+        padding-top: $headder_text_padding_top;
         ul {
           float: right;
           @include horizontal-list;
           overflow: visible;
           li {
-            a {
-              @include border-radius(8px);
-              padding: 5px 5px;
-            }
-            a:hover, a.current {
-              color: white;
-            }
+              padding: 0 5px;
           }
         }
       }
@@ -159,6 +180,7 @@ body.two-col {
         border-top: 0px;
         a {
           color: black;
+          font-weight: bold;
         }
         a:hover {
           color: white;
@@ -210,6 +232,10 @@ body.two-col {
         margin-top: 0;
       }
     }
+    div.article_tags {
+      border-bottom: 1px solid black;
+      margin-bottom: 1em;
+    }
     div.codeblock {
       pre {
         margin-left: 35px;
@@ -235,7 +261,12 @@ body.two-col {
     position: fixed;
     bottom: 0px;
     width: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    background: black;
+    opacity: 0.8;
+    a {
+      color: white;
+      font-weight: normal;
+    }
   }
   div#footer-container {
     padding: 0px;
@@ -245,7 +276,8 @@ body.two-col {
       @include column(8);
     }
     #footer-quote{
-      @include column(16, true);
+      @include column(8, true);
+      text-align: right;
     }
   }
 
