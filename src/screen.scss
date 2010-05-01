@@ -202,7 +202,7 @@ body.two-col {
   article {
     div.article_date {
       @include column(2);
-      height: 5em;
+      height: 6em;
       position: relative;
       display: inline-block;
 
@@ -231,10 +231,18 @@ body.two-col {
         margin-bottom: 0.3em; 
         margin-top: 0;
       }
+      p.subtitle {
+        font-size: 1.3em;
+      }
     }
     div.article_tags {
       border-bottom: 1px solid black;
       margin-bottom: 1em;
+      font-size: 1.2em;
+    }
+    h2 {
+      border-left: 5px solid black;
+      padding-left: 10px;
     }
     div.codeblock {
       pre {
@@ -261,32 +269,54 @@ body.two-col {
     position: fixed;
     bottom: 0px;
     width: 100%;
+    height: 45px;
+    padding-top: 10px;
     background: black;
     opacity: 0.8;
     a {
-      color: white;
+      color: #B0CF21;
       font-weight: normal;
+    }
+    a:hover {
+      color: white;
     }
   }
   div#footer-container {
     padding: 0px;
     color: white;
-    height: 20px;
    #footer-copyright {
       @include column(8);
     }
     #footer-quote{
-      @include column(8, true);
-      text-align: right;
+      @include column(16, true);
+      span#twitter_date {
+        margin-left: 20px;
+        font-style: italic;
+      }
     }
   }
 
   asside#site_sidebar {
     $sidebar_columns: 8;
     @include column($sidebar_columns, true); 
+    @include push(1);
+    h3 {
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+    }
+    h3.asside_top {
+      margin-top: 0em;
+    }
+    ul {
+      padding: 0;
+      li {
+        list-style: none;
+      }
+    }
+
   }
   article {
-    $content_columns: 16;
+    $content_columns: 15;
     @include column($content_columns); 
   } 
   section#main_content {
