@@ -11,6 +11,7 @@ $(document).ready(function() {
     $("#close").click(function(e){
         e.preventDefault();
         $("div#panel").slideUp("slow"); 
+        $("#contact_response").html('');
         //$("div#pulldown").css("background", "#010d26");
     });     
     
