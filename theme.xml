@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theme>
+  <name>Kien Tran 2010</name>
+  <author>Kien Tran</author>
+  <url>http://www.kientran.com</url>
+  <version>1.0</version>
+  <description>Personal site theme for 2010</description>
+  <template_engine>rawphpengine</template_engine>
+</theme>
