@@ -150,6 +150,9 @@ body.two-col {
           background-color: $header_text_color - #200;
           @include transition(0.0s);
         }
+        div#contact_response {
+          display: inline;
+        }
 
         textarea {
           resize:none;
