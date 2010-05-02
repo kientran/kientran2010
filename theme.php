@@ -73,7 +73,7 @@ Format::apply( 'tag_and_list', 'post_tags_out' );
 			Stack::add( 'template_header_javascript', Site::get_url('scripts') . '/jquery.js', 'jquery' );
 		}
     $this->assign('recent_posts',
-      Posts::get(array('limit'=>5, 'status'=>'published', 'orderby'=>'pubdate DESC') ) );
+      Posts::get(array('limit'=>5, 'content_type' => 'entry', 'status'=>'published', 'orderby'=>'pubdate DESC') ) );
     
     if( !$this->template_engine->assigned( 'tags' ) ) {
       $this->assign('tags', Tags::get());
