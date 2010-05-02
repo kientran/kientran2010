@@ -31,6 +31,7 @@ body.two-col {
     @include container; 
   }
   a, a:visited {
+    color: #000066;
     text-decoration: none;
     @include transition(all,0.2s, ease-in-out);
     font-weight: bold;
@@ -295,8 +296,8 @@ body.two-col {
     #footer-quote{
       @include column(16, true);
       span#twitter_date {
-        margin-left: 20px;
         font-style: italic;
+        float: right;
       }
     }
   }
