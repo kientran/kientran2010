@@ -443,7 +443,7 @@ body.two-col .container {
   display: block;
 }
 /* line 33, ../src/screen.scss */
-body.two-col a {
+body.two-col a, body.two-col a:visited {
   text-decoration: none;
   -moz-transition-property: all;
   -webkit-transition-property: all;

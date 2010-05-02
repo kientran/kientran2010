@@ -30,7 +30,7 @@ body.two-col {
     //background-image: url(../images/grid.png);
     @include container; 
   }
-  a {
+  a, a:visited {
     text-decoration: none;
     @include transition(all,0.2s, ease-in-out);
     font-weight: bold;
