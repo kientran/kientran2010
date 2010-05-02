@@ -87,3 +87,18 @@ body.bp button {
   position: relative;
   top: 0.25em;
 }
+
+/* line 18, ../src/ie.scss */
+#site_head {
+  text-align: left;
+}
+
+/* line 22, ../src/ie.scss */
+#content {
+  text-align: left;
+}
+
+/* line 26, ../src/ie.scss */
+#site_footer {
+  text-align: left;
+}

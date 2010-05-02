@@ -55,6 +55,7 @@ body.two-col {
     }
     div#head_container {
       padding-top: 20px;
+      background: #010d26;
       @include linear-gradient(color-stops(#010d26, #031740));
       @include box-shadow(#333,0px,1px,5px);
       border-bottom: 1px solid #777;
@@ -259,9 +260,6 @@ body.two-col {
     
   }
 
-  asside {
-  }
-
   div#content {
     padding-bottom: 80px;
   }
@@ -296,7 +294,7 @@ body.two-col {
     }
   }
 
-  asside#site_sidebar {
+  div#site_sidebar {
     $sidebar_columns: 8;
     @include column($sidebar_columns, true); 
     @include push(1);
@@ -304,10 +302,10 @@ body.two-col {
       margin-top: 1.5em;
       margin-bottom: 0.5em;
     }
-    h3.asside_top {
+    h3.sidebar_top{
       margin-top: 0em;
     }
-    ul {
+    ul.sidebar_list{
       padding: 0;
       li {
         list-style: none;

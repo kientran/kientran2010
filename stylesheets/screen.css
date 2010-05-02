@@ -484,6 +484,7 @@ body.two-col header#site_head a:hover {
 /* line 56, ../src/screen.scss */
 body.two-col header#site_head div#head_container {
   padding-top: 20px;
+  background: #010d26;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #010d26), color-stop(100%, #031740));
   background-image: -moz-linear-gradient(top, #010d26 0%, #031740 100%);
   -moz-box-shadow: #333333 0px 1px 5px;
@@ -492,12 +493,12 @@ body.two-col header#site_head div#head_container {
   box-shadow: #333333 0px 1px 5px;
   border-bottom: 1px solid #777;
 }
-/* line 63, ../src/screen.scss */
+/* line 64, ../src/screen.scss */
 body.two-col header#site_head div#logo_container {
   font-size: 1.2em;
   padding-bottom: 10px;
 }
-/* line 66, ../src/screen.scss */
+/* line 67, ../src/screen.scss */
 body.two-col header#site_head div#logo_container div#logo a {
   display: inline;
   float: left;
@@ -511,7 +512,7 @@ body.two-col header#site_head div#logo_container div#logo a {
 * html body.two-col header#site_head div#logo_container div#logo a {
   overflow-x: hidden;
 }
-/* line 72, ../src/screen.scss */
+/* line 73, ../src/screen.scss */
 body.two-col header#site_head div#logo_container div#actions {
   display: inline;
   float: left;
@@ -523,26 +524,26 @@ body.two-col header#site_head div#logo_container div#actions {
 * html body.two-col header#site_head div#logo_container div#actions {
   overflow-x: hidden;
 }
-/* line 75, ../src/screen.scss */
+/* line 76, ../src/screen.scss */
 body.two-col header#site_head div#logo_container div#actions a {
   display: block;
   float: left;
   height: 18px;
 }
-/* line 80, ../src/screen.scss */
+/* line 81, ../src/screen.scss */
 body.two-col header#site_head div#logo_container div#actions a#twitter {
   background: url(../images/twitter.png) no-repeat;
   padding-left: 30px;
   margin-left: 10px;
 }
-/* line 85, ../src/screen.scss */
+/* line 86, ../src/screen.scss */
 body.two-col header#site_head div#logo_container div#actions a#rss {
   background: url(../images/rss.png) no-repeat;
   padding-left: 25px;
   padding-right: 10px;
   border-right: 1px solid #b0cf21;
 }
-/* line 92, ../src/screen.scss */
+/* line 93, ../src/screen.scss */
 body.two-col header#site_head div#logo_container nav {
   display: inline;
   float: left;
@@ -554,7 +555,7 @@ body.two-col header#site_head div#logo_container nav {
 * html body.two-col header#site_head div#logo_container nav {
   overflow-x: hidden;
 }
-/* line 95, ../src/screen.scss */
+/* line 96, ../src/screen.scss */
 body.two-col header#site_head div#logo_container nav ul {
   float: right;
   margin: 0;
@@ -588,16 +589,16 @@ body.two-col header#site_head div#logo_container nav ul li:first-child, body.two
 body.two-col header#site_head div#logo_container nav ul li:last-child, body.two-col header#site_head div#logo_container nav ul li.last {
   padding-right: 0px;
 }
-/* line 99, ../src/screen.scss */
+/* line 100, ../src/screen.scss */
 body.two-col header#site_head div#logo_container nav ul li {
   padding: 0 5px;
 }
-/* line 107, ../src/screen.scss */
+/* line 108, ../src/screen.scss */
 body.two-col header#site_head div#panel {
   height: 180px;
   display: none;
 }
-/* line 111, ../src/screen.scss */
+/* line 112, ../src/screen.scss */
 body.two-col header#site_head div#panel div#about {
   display: inline;
   float: left;
@@ -610,11 +611,11 @@ body.two-col header#site_head div#panel div#about {
 * html body.two-col header#site_head div#panel div#about {
   overflow-x: hidden;
 }
-/* line 115, ../src/screen.scss */
+/* line 116, ../src/screen.scss */
 body.two-col header#site_head div#panel div#about li {
   list-style: none;
 }
-/* line 120, ../src/screen.scss */
+/* line 121, ../src/screen.scss */
 body.two-col header#site_head div#panel div#contact {
   display: inline;
   float: left;
@@ -625,11 +626,11 @@ body.two-col header#site_head div#panel div#contact {
 * html body.two-col header#site_head div#panel div#contact {
   overflow-x: hidden;
 }
-/* line 122, ../src/screen.scss */
+/* line 123, ../src/screen.scss */
 body.two-col header#site_head div#panel div#contact input[type="text"] {
   width: 95%;
 }
-/* line 125, ../src/screen.scss */
+/* line 126, ../src/screen.scss */
 body.two-col header#site_head div#panel div#contact input[type="button"] {
   outline-width: 0;
   border: 1px solid #000;
@@ -657,7 +658,7 @@ body.two-col header#site_head div#panel div#contact input[type="button"] {
   color: black;
   text-shadow: rgba(0, 0, 0, 0.5) 0px -1px 0px;
 }
-/* line 144, ../src/screen.scss */
+/* line 145, ../src/screen.scss */
 body.two-col header#site_head div#panel div#contact input[type="button"]:hover {
   -moz-box-shadow: rgba(0, 0, 0, 0.9) 0px 1px 3px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.9) 0px 1px 3px;
@@ -665,7 +666,7 @@ body.two-col header#site_head div#panel div#contact input[type="button"]:hover {
   box-shadow: rgba(0, 0, 0, 0.9) 0px 1px 3px;
   background-color: #d0cf21;
 }
-/* line 148, ../src/screen.scss */
+/* line 149, ../src/screen.scss */
 body.two-col header#site_head div#panel div#contact input[type="button"]:active, body.two-col header#site_head div#panel div#contact button:active {
   background-color: #8ecf21;
   -moz-transition-property: 0s;
@@ -677,13 +678,13 @@ body.two-col header#site_head div#panel div#contact input[type="button"]:active,
   -ms-transition-duration: 1s;
   transition-duration: 1s;
 }
-/* line 153, ../src/screen.scss */
+/* line 154, ../src/screen.scss */
 body.two-col header#site_head div#panel div#contact textarea {
   resize: none;
   width: 95%;
   height: 8.25em;
 }
-/* line 158, ../src/screen.scss */
+/* line 159, ../src/screen.scss */
 body.two-col header#site_head div#panel div#contact div#contact-left {
   display: inline;
   float: left;
@@ -694,7 +695,7 @@ body.two-col header#site_head div#panel div#contact div#contact-left {
 * html body.two-col header#site_head div#panel div#contact div#contact-left {
   overflow-x: hidden;
 }
-/* line 161, ../src/screen.scss */
+/* line 162, ../src/screen.scss */
 body.two-col header#site_head div#panel div#contact div#contact-right {
   display: inline;
   float: left;
@@ -705,12 +706,12 @@ body.two-col header#site_head div#panel div#contact div#contact-right {
 * html body.two-col header#site_head div#panel div#contact div#contact-right {
   overflow-x: hidden;
 }
-/* line 168, ../src/screen.scss */
+/* line 169, ../src/screen.scss */
 body.two-col header#site_head div#tab {
   height: 3em;
   display: block;
 }
-/* line 171, ../src/screen.scss */
+/* line 172, ../src/screen.scss */
 body.two-col header#site_head div#tab div#pulldown {
   text-align: center;
   background: #B0CF21;
@@ -748,25 +749,25 @@ body.two-col header#site_head div#tab div#pulldown {
 * html body.two-col header#site_head div#tab div#pulldown {
   overflow-x: hidden;
 }
-/* line 181, ../src/screen.scss */
+/* line 182, ../src/screen.scss */
 body.two-col header#site_head div#tab div#pulldown a {
   color: black;
   font-weight: bold;
 }
-/* line 185, ../src/screen.scss */
+/* line 186, ../src/screen.scss */
 body.two-col header#site_head div#tab div#pulldown a:hover {
   color: white;
   text-shadow: #aaaaaa 1px 1px 1px;
 }
-/* line 191, ../src/screen.scss */
+/* line 192, ../src/screen.scss */
 body.two-col header#site_head div#tab a#close {
   display: none;
 }
-/* line 197, ../src/screen.scss */
+/* line 198, ../src/screen.scss */
 body.two-col section#page {
   margin-top: 40px;
 }
-/* line 203, ../src/screen.scss */
+/* line 204, ../src/screen.scss */
 body.two-col article div.article_date {
   display: inline;
   float: left;
@@ -783,22 +784,22 @@ body.two-col article div.article_date {
 * html body.two-col article div.article_date {
   overflow-x: hidden;
 }
-/* line 210, ../src/screen.scss */
+/* line 211, ../src/screen.scss */
 body.two-col article div.article_date .day, body.two-col article div.article_date .month, body.two-col article div.article_date .year {
   position: absolute;
 }
-/* line 213, ../src/screen.scss */
+/* line 214, ../src/screen.scss */
 body.two-col article div.article_date span.day {
   font-size: 30px;
   top: 15px;
 }
-/* line 217, ../src/screen.scss */
+/* line 218, ../src/screen.scss */
 body.two-col article div.article_date span.month {
   top: 0;
   left: 0;
   font-size: 18px;
 }
-/* line 222, ../src/screen.scss */
+/* line 223, ../src/screen.scss */
 body.two-col article div.article_date span.year {
   top: 15px;
   right: 0px;
@@ -808,34 +809,34 @@ body.two-col article div.article_date span.year {
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }
-/* line 230, ../src/screen.scss */
+/* line 231, ../src/screen.scss */
 body.two-col article div.article_title h1 {
   margin-bottom: 0.3em;
   margin-top: 0;
 }
-/* line 234, ../src/screen.scss */
+/* line 235, ../src/screen.scss */
 body.two-col article div.article_title p.subtitle {
   font-size: 1.3em;
 }
-/* line 238, ../src/screen.scss */
+/* line 239, ../src/screen.scss */
 body.two-col article div.article_tags {
   border-bottom: 1px solid black;
   margin-bottom: 1em;
   font-size: 1.2em;
 }
-/* line 243, ../src/screen.scss */
+/* line 244, ../src/screen.scss */
 body.two-col article h2 {
   border-left: 5px solid black;
   padding-left: 10px;
 }
-/* line 248, ../src/screen.scss */
+/* line 249, ../src/screen.scss */
 body.two-col article div.codeblock pre {
   margin-left: 35px;
   border: 1px solid black;
   border-left: 5px solid black;
   padding-left: 10px;
 }
-/* line 254, ../src/screen.scss */
+/* line 255, ../src/screen.scss */
 body.two-col article div.codeblock span.type {
   position: absolute;
   -moz-transform: rotate(-90deg);
@@ -843,11 +844,11 @@ body.two-col article div.codeblock span.type {
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }
-/* line 265, ../src/screen.scss */
+/* line 263, ../src/screen.scss */
 body.two-col div#content {
   padding-bottom: 80px;
 }
-/* line 268, ../src/screen.scss */
+/* line 266, ../src/screen.scss */
 body.two-col footer#site_footer {
   position: fixed;
   bottom: 0px;
@@ -857,21 +858,21 @@ body.two-col footer#site_footer {
   background: black;
   opacity: 0.8;
 }
-/* line 276, ../src/screen.scss */
+/* line 274, ../src/screen.scss */
 body.two-col footer#site_footer a {
   color: #B0CF21;
   font-weight: normal;
 }
-/* line 280, ../src/screen.scss */
+/* line 278, ../src/screen.scss */
 body.two-col footer#site_footer a:hover {
   color: white;
 }
-/* line 284, ../src/screen.scss */
+/* line 282, ../src/screen.scss */
 body.two-col div#footer-container {
   padding: 0px;
   color: white;
 }
-/* line 287, ../src/screen.scss */
+/* line 285, ../src/screen.scss */
 body.two-col div#footer-container #footer-copyright {
   display: inline;
   float: left;
@@ -882,7 +883,7 @@ body.two-col div#footer-container #footer-copyright {
 * html body.two-col div#footer-container #footer-copyright {
   overflow-x: hidden;
 }
-/* line 290, ../src/screen.scss */
+/* line 288, ../src/screen.scss */
 body.two-col div#footer-container #footer-quote {
   display: inline;
   float: left;
@@ -893,13 +894,13 @@ body.two-col div#footer-container #footer-quote {
 * html body.two-col div#footer-container #footer-quote {
   overflow-x: hidden;
 }
-/* line 292, ../src/screen.scss */
+/* line 290, ../src/screen.scss */
 body.two-col div#footer-container #footer-quote span#twitter_date {
   margin-left: 20px;
   font-style: italic;
 }
-/* line 299, ../src/screen.scss */
-body.two-col asside#site_sidebar {
+/* line 297, ../src/screen.scss */
+body.two-col div#site_sidebar {
   display: inline;
   float: left;
   margin-right: 0;
@@ -910,27 +911,27 @@ body.two-col asside#site_sidebar {
   margin: 0 -40px 1.5em 40px;
 }
 /* line 138, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0.rc4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.two-col asside#site_sidebar {
+* html body.two-col div#site_sidebar {
   overflow-x: hidden;
 }
-/* line 303, ../src/screen.scss */
-body.two-col asside#site_sidebar h3 {
+/* line 301, ../src/screen.scss */
+body.two-col div#site_sidebar h3 {
   margin-top: 1.5em;
   margin-bottom: 0.5em;
 }
-/* line 307, ../src/screen.scss */
-body.two-col asside#site_sidebar h3.asside_top {
+/* line 305, ../src/screen.scss */
+body.two-col div#site_sidebar h3.sidebar_top {
   margin-top: 0em;
 }
-/* line 310, ../src/screen.scss */
-body.two-col asside#site_sidebar ul {
+/* line 308, ../src/screen.scss */
+body.two-col div#site_sidebar ul.sidebar_list {
   padding: 0;
 }
-/* line 312, ../src/screen.scss */
-body.two-col asside#site_sidebar ul li {
+/* line 310, ../src/screen.scss */
+body.two-col div#site_sidebar ul.sidebar_list li {
   list-style: none;
 }
-/* line 318, ../src/screen.scss */
+/* line 316, ../src/screen.scss */
 body.two-col article {
   display: inline;
   float: left;
@@ -941,7 +942,7 @@ body.two-col article {
 * html body.two-col article {
   overflow-x: hidden;
 }
-/* line 322, ../src/screen.scss */
+/* line 320, ../src/screen.scss */
 body.two-col section#main_content {
   padding-top: 150px;
 }
