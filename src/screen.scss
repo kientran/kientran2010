@@ -201,6 +201,7 @@ body.two-col {
 
   /* Articles */
   article {
+    margin-bottom: 40px;
     div.article_date {
       @include column(2);
       height: 6em;
@@ -256,6 +257,9 @@ body.two-col {
         position: absolute;
         @include rotate(-90deg);
       }
+    }
+    footer {
+      border-top: 1px solid black;
     }
     
   }
@@ -313,7 +317,7 @@ body.two-col {
     }
 
   }
-  article {
+  div#articles {
     $content_columns: 15;
     @include column($content_columns); 
   } 

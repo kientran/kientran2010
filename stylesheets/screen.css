@@ -767,7 +767,11 @@ body.two-col header#site_head div#tab a#close {
 body.two-col section#page {
   margin-top: 40px;
 }
-/* line 204, ../src/screen.scss */
+/* line 203, ../src/screen.scss */
+body.two-col article {
+  margin-bottom: 40px;
+}
+/* line 205, ../src/screen.scss */
 body.two-col article div.article_date {
   display: inline;
   float: left;
@@ -784,22 +788,22 @@ body.two-col article div.article_date {
 * html body.two-col article div.article_date {
   overflow-x: hidden;
 }
-/* line 211, ../src/screen.scss */
+/* line 212, ../src/screen.scss */
 body.two-col article div.article_date .day, body.two-col article div.article_date .month, body.two-col article div.article_date .year {
   position: absolute;
 }
-/* line 214, ../src/screen.scss */
+/* line 215, ../src/screen.scss */
 body.two-col article div.article_date span.day {
   font-size: 30px;
   top: 15px;
 }
-/* line 218, ../src/screen.scss */
+/* line 219, ../src/screen.scss */
 body.two-col article div.article_date span.month {
   top: 0;
   left: 0;
   font-size: 18px;
 }
-/* line 223, ../src/screen.scss */
+/* line 224, ../src/screen.scss */
 body.two-col article div.article_date span.year {
   top: 15px;
   right: 0px;
@@ -809,34 +813,34 @@ body.two-col article div.article_date span.year {
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }
-/* line 231, ../src/screen.scss */
+/* line 232, ../src/screen.scss */
 body.two-col article div.article_title h1 {
   margin-bottom: 0.3em;
   margin-top: 0;
 }
-/* line 235, ../src/screen.scss */
+/* line 236, ../src/screen.scss */
 body.two-col article div.article_title p.subtitle {
   font-size: 1.3em;
 }
-/* line 239, ../src/screen.scss */
+/* line 240, ../src/screen.scss */
 body.two-col article div.article_tags {
   border-bottom: 1px solid black;
   margin-bottom: 1em;
   font-size: 1.2em;
 }
-/* line 244, ../src/screen.scss */
+/* line 245, ../src/screen.scss */
 body.two-col article h2 {
   border-left: 5px solid black;
   padding-left: 10px;
 }
-/* line 249, ../src/screen.scss */
+/* line 250, ../src/screen.scss */
 body.two-col article div.codeblock pre {
   margin-left: 35px;
   border: 1px solid black;
   border-left: 5px solid black;
   padding-left: 10px;
 }
-/* line 255, ../src/screen.scss */
+/* line 256, ../src/screen.scss */
 body.two-col article div.codeblock span.type {
   position: absolute;
   -moz-transform: rotate(-90deg);
@@ -844,11 +848,15 @@ body.two-col article div.codeblock span.type {
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }
-/* line 263, ../src/screen.scss */
+/* line 261, ../src/screen.scss */
+body.two-col article footer {
+  border-top: 1px solid black;
+}
+/* line 267, ../src/screen.scss */
 body.two-col div#content {
   padding-bottom: 80px;
 }
-/* line 266, ../src/screen.scss */
+/* line 270, ../src/screen.scss */
 body.two-col footer#site_footer {
   position: fixed;
   bottom: 0px;
@@ -858,21 +866,21 @@ body.two-col footer#site_footer {
   background: black;
   opacity: 0.8;
 }
-/* line 274, ../src/screen.scss */
+/* line 278, ../src/screen.scss */
 body.two-col footer#site_footer a {
   color: #B0CF21;
   font-weight: normal;
 }
-/* line 278, ../src/screen.scss */
+/* line 282, ../src/screen.scss */
 body.two-col footer#site_footer a:hover {
   color: white;
 }
-/* line 282, ../src/screen.scss */
+/* line 286, ../src/screen.scss */
 body.two-col div#footer-container {
   padding: 0px;
   color: white;
 }
-/* line 285, ../src/screen.scss */
+/* line 289, ../src/screen.scss */
 body.two-col div#footer-container #footer-copyright {
   display: inline;
   float: left;
@@ -883,7 +891,7 @@ body.two-col div#footer-container #footer-copyright {
 * html body.two-col div#footer-container #footer-copyright {
   overflow-x: hidden;
 }
-/* line 288, ../src/screen.scss */
+/* line 292, ../src/screen.scss */
 body.two-col div#footer-container #footer-quote {
   display: inline;
   float: left;
@@ -894,12 +902,12 @@ body.two-col div#footer-container #footer-quote {
 * html body.two-col div#footer-container #footer-quote {
   overflow-x: hidden;
 }
-/* line 290, ../src/screen.scss */
+/* line 294, ../src/screen.scss */
 body.two-col div#footer-container #footer-quote span#twitter_date {
   margin-left: 20px;
   font-style: italic;
 }
-/* line 297, ../src/screen.scss */
+/* line 301, ../src/screen.scss */
 body.two-col div#site_sidebar {
   display: inline;
   float: left;
@@ -914,35 +922,35 @@ body.two-col div#site_sidebar {
 * html body.two-col div#site_sidebar {
   overflow-x: hidden;
 }
-/* line 301, ../src/screen.scss */
+/* line 305, ../src/screen.scss */
 body.two-col div#site_sidebar h3 {
   margin-top: 1.5em;
   margin-bottom: 0.5em;
 }
-/* line 305, ../src/screen.scss */
+/* line 309, ../src/screen.scss */
 body.two-col div#site_sidebar h3.sidebar_top {
   margin-top: 0em;
 }
-/* line 308, ../src/screen.scss */
+/* line 312, ../src/screen.scss */
 body.two-col div#site_sidebar ul.sidebar_list {
   padding: 0;
 }
-/* line 310, ../src/screen.scss */
+/* line 314, ../src/screen.scss */
 body.two-col div#site_sidebar ul.sidebar_list li {
   list-style: none;
 }
-/* line 316, ../src/screen.scss */
-body.two-col article {
+/* line 320, ../src/screen.scss */
+body.two-col div#articles {
   display: inline;
   float: left;
   margin-right: 10px;
   width: 590px;
 }
 /* line 138, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0.rc4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.two-col article {
+* html body.two-col div#articles {
   overflow-x: hidden;
 }
-/* line 320, ../src/screen.scss */
+/* line 324, ../src/screen.scss */
 body.two-col section#main_content {
   padding-top: 150px;
 }
