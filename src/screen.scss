@@ -208,7 +208,7 @@ body.two-col {
     margin-bottom: 40px;
     div.article_date {
       @include column(2);
-      height: 6em;
+      height: 4.5em;
       position: relative;
       display: inline-block;
 
@@ -234,11 +234,8 @@ body.two-col {
     }
     div.article_title {
       h1 {
-        margin-bottom: 0.3em; 
+        margin-bottom: 1em; 
         margin-top: 0;
-      }
-      p.subtitle {
-        font-size: 1.3em;
       }
     }
     div.article_tags {
@@ -258,6 +255,7 @@ body.two-col {
         padding-left: 10px;
       }
       span.type {
+        margin-top: 10px;
         position: absolute;
         @include rotate(-90deg);
       }
