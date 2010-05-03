@@ -147,10 +147,12 @@ class TwitterCacher {
 			curl_setopt($ch, CURLOPT_POSTFIELDS, $postargs);
 		}
 
+    /*
 		if ( $this->username_ !== false &&
 			$this->password_ !== false ) {
 			curl_setopt($ch, CURLOPT_USERPWD, $this->username_.':'.$this->password_ );	
 		}
+*/
 
     	curl_setopt($ch, CURLOPT_VERBOSE, 0);
        	curl_setopt($ch, CURLOPT_NOBODY, 0);
@@ -201,12 +203,8 @@ class TwitterCacher {
                 $id = $this->username_;
             }
             
-        	if( $id === false ) {
-            		$request = 'http://twitter.com/statuses/user_timeline.' . $this->type_ . $qs;
-		}
-       	 	else {
             		$request = 'http://twitter.com/statuses/user_timeline/' . rawurlencode($id) . '.' . $this->type_ . $qs;
-		}
+
         
 		return $this->loadURL($request);
 	}
