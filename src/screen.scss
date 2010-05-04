@@ -4,22 +4,34 @@
 @import "compass/utilities/lists/horizontal-list";
 @import "compass/css3";
 @import "blueprint";
-@import "blueprint/scaffolding";
-
-@include blueprint-scaffolding("body.bp");
 
 $header_text_color: #B0CF21;
 
 body.bp {
-  @include blueprint-typography(true);
+//  @include blueprint-typography(true);
   @include blueprint-utilities;
-  @include blueprint-debug;
-  @include blueprint-interaction;
+//  @include blueprint-debug;
+//  @include blueprint-interaction;
   margin: 0px;
-  //background: url(../images/WhiteTexture.jpg);
   background: #e4e6e5 url(../images/WhiteTexture2.jpg) repeat-x;
   background-position: 0 80px;
+  
 }
+
+/* Font Stacks */
+body {
+ 
+  line-height: 1.3em; 
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  header {
+    font-size: 90%;
+  }
+  p, footer, div#site_sidebar {
+    font-size: 10pt; 
+    letter-spacing: 0em;
+  }
+
+}    
 
 form.bp {
   @include blueprint-form; 
@@ -110,6 +122,12 @@ body.two-col {
       height: 180px;
       display: none;
 
+      ul {
+        padding: 0px;
+        li {
+          margin-bottom: 5px;
+        }
+      }
       div#about {
         @include column(8);
         height: 100%;
@@ -208,7 +226,7 @@ body.two-col {
     margin-bottom: 40px;
     div.article_date {
       @include column(2);
-      height: 4.5em;
+      height: 50px;
       position: relative;
       display: inline-block;
 
@@ -218,7 +236,7 @@ body.two-col {
       }
       span.day { 
         font-size: 30px;
-        top: 15px;
+        top: 25px;
       }
       span.month { 
         top: 0;
@@ -233,6 +251,7 @@ body.two-col {
       }    
     }
     div.article_title {
+      height: 60px;
       h1 {
         margin-bottom: 1em; 
         margin-top: 0;
@@ -303,7 +322,6 @@ body.two-col {
   div#site_sidebar {
     $sidebar_columns: 8;
     @include column($sidebar_columns, true); 
-    @include push(1);
     h3 {
       margin-top: 1.5em;
       margin-bottom: 0.5em;
@@ -320,8 +338,9 @@ body.two-col {
 
   }
   div#articles {
-    $content_columns: 15;
+    $content_columns: 13;
     @include column($content_columns); 
+    @include append(3);
   } 
   section#main_content {
     padding-top: 150px;
