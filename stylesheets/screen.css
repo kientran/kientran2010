@@ -65,7 +65,7 @@ body header {
   font-size: 90%;
 }
 /* line 29, ../src/screen.scss */
-body p, body footer, body div#site_sidebar {
+body p, body article li, body footer, body div#site_sidebar {
   font-size: 10pt;
   letter-spacing: 0em;
 }
