@@ -12,7 +12,6 @@
     </div>
     <div class="article_title">
       <h1><a href="<?php echo $post->permalink; ?>" title="<?php echo $post->title; ?>"><?php echo $post->title_out; ?></a></h1>
-      <p class="subtitle">Urna dis in lundium, pulvinar</p>
     </div>
     <div class="article_tags">
       Filed under: <?php if ( is_array( $post->tags ) ) { ?><?php echo $post->tags_out; ?><?php } ?>

@@ -550,35 +550,63 @@ body.two-col article div.article_tags {
   font-size: 1.2em;
 }
 /* line 263, ../src/screen.scss */
+body.two-col article a.sourcelink, body.two-col article a.demolink {
+  display: inline-block;
+  padding: 5px 10px 6px;
+  color: #fff;
+  font-weight: bold;
+  line-height: 1;
+  position: relative;
+  cursor: pointer;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+  -moz-box-shadow: #333333 1px 1px 5px;
+  -webkit-box-shadow: #333333 1px 1px 5px;
+  -o-box-shadow: #333333 1px 1px 5px;
+  box-shadow: #333333 1px 1px 5px;
+  border: 1px solid #777;
+}
+/* line 275, ../src/screen.scss */
+body.two-col article a.demolink {
+  background: #B0CF21;
+  color: black;
+}
+/* line 279, ../src/screen.scss */
+body.two-col article a:hover.demolink {
+  color: white;
+}
+/* line 282, ../src/screen.scss */
+body.two-col article a.sourcelink {
+  background: #006;
+}
+/* line 285, ../src/screen.scss */
+body.two-col article a:hover.sourcelink {
+  color: #B0CF21;
+}
+/* line 288, ../src/screen.scss */
 body.two-col article h2 {
   border-left: 5px solid black;
   padding-left: 10px;
 }
-/* line 268, ../src/screen.scss */
-body.two-col article div.codeblock pre {
-  margin-left: 35px;
+/* line 292, ../src/screen.scss */
+body.two-col article pre {
   border: 1px solid black;
   border-left: 5px solid black;
   padding-left: 10px;
 }
-/* line 274, ../src/screen.scss */
-body.two-col article div.codeblock span.type {
-  margin-top: 10px;
-  position: absolute;
-  -moz-transform: rotate(-90deg);
-  -webkit-transform: rotate(-90deg);
-  -o-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-}
-/* line 280, ../src/screen.scss */
+/* line 297, ../src/screen.scss */
 body.two-col article footer {
   border-top: 1px solid black;
 }
-/* line 286, ../src/screen.scss */
+/* line 303, ../src/screen.scss */
 body.two-col div#content {
   padding-bottom: 80px;
 }
-/* line 289, ../src/screen.scss */
+/* line 306, ../src/screen.scss */
 body.two-col footer#site_footer {
   position: fixed;
   bottom: 0px;
@@ -588,21 +616,21 @@ body.two-col footer#site_footer {
   background: black;
   opacity: 0.8;
 }
-/* line 297, ../src/screen.scss */
+/* line 314, ../src/screen.scss */
 body.two-col footer#site_footer a {
   color: #B0CF21;
   font-weight: normal;
 }
-/* line 301, ../src/screen.scss */
+/* line 318, ../src/screen.scss */
 body.two-col footer#site_footer a:hover {
   color: white;
 }
-/* line 305, ../src/screen.scss */
+/* line 322, ../src/screen.scss */
 body.two-col div#footer-container {
   padding: 0px;
   color: white;
 }
-/* line 308, ../src/screen.scss */
+/* line 325, ../src/screen.scss */
 body.two-col div#footer-container #footer-copyright {
   display: inline;
   float: left;
@@ -613,7 +641,7 @@ body.two-col div#footer-container #footer-copyright {
 * html body.two-col div#footer-container #footer-copyright {
   overflow-x: hidden;
 }
-/* line 311, ../src/screen.scss */
+/* line 328, ../src/screen.scss */
 body.two-col div#footer-container #footer-quote {
   display: inline;
   float: left;
@@ -624,12 +652,12 @@ body.two-col div#footer-container #footer-quote {
 * html body.two-col div#footer-container #footer-quote {
   overflow-x: hidden;
 }
-/* line 313, ../src/screen.scss */
+/* line 330, ../src/screen.scss */
 body.two-col div#footer-container #footer-quote span#twitter_date {
   font-style: italic;
   float: right;
 }
-/* line 320, ../src/screen.scss */
+/* line 337, ../src/screen.scss */
 body.two-col div#site_sidebar {
   display: inline;
   float: left;
@@ -641,24 +669,24 @@ body.two-col div#site_sidebar {
 * html body.two-col div#site_sidebar {
   overflow-x: hidden;
 }
-/* line 324, ../src/screen.scss */
+/* line 341, ../src/screen.scss */
 body.two-col div#site_sidebar h3 {
   margin-top: 1.5em;
   margin-bottom: 0.5em;
 }
-/* line 328, ../src/screen.scss */
+/* line 345, ../src/screen.scss */
 body.two-col div#site_sidebar h3.sidebar_top {
   margin-top: 0em;
 }
-/* line 331, ../src/screen.scss */
+/* line 348, ../src/screen.scss */
 body.two-col div#site_sidebar ul.sidebar_list {
   padding: 0;
 }
-/* line 333, ../src/screen.scss */
+/* line 350, ../src/screen.scss */
 body.two-col div#site_sidebar ul.sidebar_list li {
   list-style: none;
 }
-/* line 339, ../src/screen.scss */
+/* line 356, ../src/screen.scss */
 body.two-col div#articles {
   display: inline;
   float: left;
@@ -670,7 +698,7 @@ body.two-col div#articles {
 * html body.two-col div#articles {
   overflow-x: hidden;
 }
-/* line 344, ../src/screen.scss */
+/* line 361, ../src/screen.scss */
 body.two-col section#main_content {
   padding-top: 150px;
 }

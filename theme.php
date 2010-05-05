@@ -32,7 +32,7 @@ Format::apply( 'autop', 'comment_content_out' );
 Format::apply( 'tag_and_list', 'post_tags_out' );
 
 // Remove the comment on the following line to limit post length on the home page to 1 paragraph or 100 characters
-//Format::apply_with_hook_params( 'more', 'post_content_out', _t('more'), 100, 1 );
+Format::apply_with_hook_params( 'more', 'post_content_excerpt', _t('more'), 100, 1 );
 	}
 
 /**
@@ -75,6 +75,9 @@ Format::apply( 'tag_and_list', 'post_tags_out' );
     $this->assign('recent_posts',
       Posts::get(array('limit'=>5, 'content_type' => 'entry', 'status'=>'published', 'orderby'=>'pubdate DESC') ) );
     
+    $this->assign('code_projects',
+      Posts::get(array('content_type' => 'codefolio', 'status'=>'published', 'orderby'=>'pubdate DESC') ) );
+
     if( !$this->template_engine->assigned( 'tags' ) ) {
       $this->assign('tags', Tags::get());
     }
