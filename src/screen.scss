@@ -260,23 +260,40 @@ body.two-col {
       margin-bottom: 1em;
       font-size: 1.2em;
     }
+    a.sourcelink, a.demolink {
+      display: inline-block;
+      padding: 5px 10px 6px;
+      color: #fff;
+      font-weight: bold;
+      line-height: 1;
+      position: relative;
+      cursor: pointer;
+      @include border-radius(8px);
+      @include box-shadow;
+      border: 1px solid #777;
+    }
+    a.demolink {
+      background: #B0CF21; 
+      color: black;
+    }
+    a:hover.demolink {
+      color: white;
+    }
+    a.sourcelink {
+      background: #006;
+    }
+    a:hover.sourcelink {
+      color: #B0CF21;
+    }
     h2 {
       border-left: 5px solid black;
       padding-left: 10px;
     }
-    div.codeblock {
-      pre {
-        margin-left: 35px;
+    pre {
         border: 1px solid black;
         border-left: 5px solid black;
         padding-left: 10px;
       }
-      span.type {
-        margin-top: 10px;
-        position: absolute;
-        @include rotate(-90deg);
-      }
-    }
     footer {
       border-top: 1px solid black;
     }
@@ -320,6 +337,7 @@ body.two-col {
   div#site_sidebar {
     $sidebar_columns: 8;
     @include column($sidebar_columns, true); 
+    position: fixed;
     h3 {
       margin-top: 1.5em;
       margin-bottom: 0.5em;
@@ -336,9 +354,9 @@ body.two-col {
 
   }
   div#articles {
-    $content_columns: 13;
+    $content_columns: 14;
     @include column($content_columns); 
-    @include append(3);
+    @include append(2);
   } 
   section#main_content {
     padding-top: 150px;
