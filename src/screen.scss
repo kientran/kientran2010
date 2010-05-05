@@ -320,6 +320,7 @@ body.two-col {
   div#site_sidebar {
     $sidebar_columns: 8;
     @include column($sidebar_columns, true); 
+    position: fixed;
     h3 {
       margin-top: 1.5em;
       margin-bottom: 0.5em;
@@ -336,9 +337,9 @@ body.two-col {
 
   }
   div#articles {
-    $content_columns: 13;
+    $content_columns: 14;
     @include column($content_columns); 
-    @include append(3);
+    @include append(2);
   } 
   section#main_content {
     padding-top: 150px;

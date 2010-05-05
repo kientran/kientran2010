@@ -635,41 +635,42 @@ body.two-col div#site_sidebar {
   float: left;
   margin-right: 0;
   width: 310px;
+  position: fixed;
 }
 /* line 138, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0.rc5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body.two-col div#site_sidebar {
   overflow-x: hidden;
 }
-/* line 323, ../src/screen.scss */
+/* line 324, ../src/screen.scss */
 body.two-col div#site_sidebar h3 {
   margin-top: 1.5em;
   margin-bottom: 0.5em;
 }
-/* line 327, ../src/screen.scss */
+/* line 328, ../src/screen.scss */
 body.two-col div#site_sidebar h3.sidebar_top {
   margin-top: 0em;
 }
-/* line 330, ../src/screen.scss */
+/* line 331, ../src/screen.scss */
 body.two-col div#site_sidebar ul.sidebar_list {
   padding: 0;
 }
-/* line 332, ../src/screen.scss */
+/* line 333, ../src/screen.scss */
 body.two-col div#site_sidebar ul.sidebar_list li {
   list-style: none;
 }
-/* line 338, ../src/screen.scss */
+/* line 339, ../src/screen.scss */
 body.two-col div#articles {
   display: inline;
   float: left;
   margin-right: 10px;
-  width: 510px;
-  padding-right: 120px;
+  width: 550px;
+  padding-right: 80px;
 }
 /* line 138, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0.rc5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body.two-col div#articles {
   overflow-x: hidden;
 }
-/* line 343, ../src/screen.scss */
+/* line 344, ../src/screen.scss */
 body.two-col section#main_content {
   padding-top: 150px;
 }

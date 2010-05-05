@@ -61,7 +61,6 @@
           <li>Software Developer</li>
           <li>System Administrator</li>
           <li>Startup Enthusiast</li>
-          <li>Web Junkie</li>
           <li>Musican</li>
           <li>Catholic</li>
           <li>Texan</li>
