@@ -250,7 +250,11 @@ body.two-col {
     }
     div.article_title {
       height: 60px;
+      h1:first-line {
+        line-height: .8em;
+      }
       h1 {
+        line-height: 1em;
         margin-bottom: 1em; 
         margin-top: 0;
       }
@@ -288,6 +292,10 @@ body.two-col {
     h2 {
       border-left: 5px solid black;
       padding-left: 10px;
+    }
+    img {
+      border: 1px solid black;
+      @include box-shadow;
     }
     pre {
         border: 1px solid black;

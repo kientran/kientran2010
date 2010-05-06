@@ -10,9 +10,7 @@
   <![endif]-->
 
 	<!-- define feed information -->
-	<link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="<?php $theme->feed_alternate(); ?>">
-	<link rel="edit" type="application/atom+xml" title="Atom Publishing Protocol" href="<?php URL::out( 'atompub_servicedocument' ); ?>">
-	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="<?php URL::out( 'rsd' ); ?>">
+	<link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="http://feeds.feedburner.com/kientran">
 
 
   <link href="<?php Site::out_url( 'theme' ); ?>/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -35,19 +33,19 @@
   <div id="head_container">
   <div id="logo_container" class="container">
     <div id="logo">
-      <a href="#">
+      <a href="<?php Site::out_url( 'habari' ); ?>">
           Kien Tran
       </a>
     </div>
     <div id="actions">
-      <a href="#" id="rss">Subscribe</a>  <a href="#" id="twitter">Follow Twitter</a>
+      <a href="http://feeds.feedburner.com/kientran" id="rss">Subscribe</a>  <a href="#" id="twitter">Follow Twitter</a>
     </div>
     <nav>
     <ul>
-    <li><a href="#">Resume</a></li>
-    <li><a href="#">Codefolio</a></li>
-    <li><a href="#">Webfolio</a></li>
-    <li><a href="#">Stalk Me</a></li>
+    <li><a href="/resume">Resume</a></li>
+    <li><a href="/codefolio">Codefolio</a></li>
+    <li><a href="/webfolio">Webfolio</a></li>
+    <li><a href="/stalk-me">Stalk Me</a></li>
     </ul>
     </nav>
 

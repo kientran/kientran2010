@@ -4,8 +4,7 @@
 <section id="main_content" class="container">
 
 <div id="articles">
-<?php //foreach ($posts as $post ) { ?>
-<?php $post = $posts[0]; ?>
+<?php foreach ($code_projects as $post ) { ?>
 <article id="post-<?php echo $post->id; ?>" class="<?php echo $post->statusname; ?>">
   <header id="article_head">
     <div class="article_date">
@@ -20,7 +19,7 @@
   </header>
 
   <section>
-    <?php echo $post->content_out; ?>
+    <?php echo $post->content_excerpt; ?>
   </section>
 
   <footer id="article_footer">
@@ -28,7 +27,11 @@
   </footer>
 </article>
 
-<?php //} ?><!-- End post loop -->
+<?php } ?><!-- End post loop -->
+    <div class="navigation">
+			<div class="alignleft"><?php $theme->prev_page_link(); ?> <?php $theme->page_selector( null, array( 'leftSide' => 2, 'rightSide' => 2 ) ); ?> <?php $theme->next_page_link(); ?></div>
+		</div>
+
 
 </div>
 

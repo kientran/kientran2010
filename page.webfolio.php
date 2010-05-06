@@ -4,8 +4,7 @@
 <section id="main_content" class="container">
 
 <div id="articles">
-<?php //foreach ($posts as $post ) { ?>
-<?php $post = $posts[0]; ?>
+<?php foreach ($web_projects as $post ) { ?>
 <article id="post-<?php echo $post->id; ?>" class="<?php echo $post->statusname; ?>">
   <header id="article_head">
     <div class="article_date">
@@ -15,24 +14,25 @@
       <h1><a href="<?php echo $post->permalink; ?>" title="<?php echo $post->title; ?>"><?php echo $post->title_out; ?></a></h1>
     </div>
     <div class="article_tags">
-      Filed under: <?php if ( is_array( $post->tags ) ) { ?><?php echo $post->tags_out; ?><?php } ?>
+      Tools Used: <?php if ( is_array( $post->tags ) ) { ?><?php echo $post->tags_out; ?><?php } ?>
     </div>
   </header>
 
   <section>
-    <?php echo $post->content_out; ?>
+    <img src='<?php echo $post->info->img_url; ?>' height='120px' width='540px' />
   </section>
 
-  <footer id="article_footer">
-    <?php $theme->comments_link($post); ?>
-  </footer>
 </article>
 
-<?php //} ?><!-- End post loop -->
+<?php } ?><!-- End post loop -->
+    <div class="navigation">
+			<div class="alignleft"><?php $theme->prev_page_link(); ?> <?php $theme->page_selector( null, array( 'leftSide' => 2, 'rightSide' => 2 ) ); ?> <?php $theme->next_page_link(); ?></div>
+		</div>
+
 
 </div>
 
-<?php $theme->display('sidebar'); ?>
+<?php $theme->display('webfolio.sidebar'); ?>
 
 
 </section>

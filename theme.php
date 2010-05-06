@@ -78,11 +78,20 @@ Format::apply_with_hook_params( 'more', 'post_content_excerpt', _t('more'), 100,
     $this->assign('code_projects',
       Posts::get(array('content_type' => 'codefolio', 'status'=>'published', 'orderby'=>'pubdate DESC') ) );
 
+    $this->assign('web_projects',
+      Posts::get(array('content_type' => 'webfolio', 'status'=>'published', 'orderby'=>'pubdate DESC') ) );
+
+
     if( !$this->template_engine->assigned( 'tags' ) ) {
       $this->assign('tags', Tags::get());
     }
 
 	}
+
+  public function act_display_home( $user_filters = array() ) 
+  {
+    parent::act_display_home( array('content_type' => 'entry') );
+  }
 
 	public function CleanPress_comment_class( $comment, $post )
 	{
