@@ -36,7 +36,7 @@ $(document).ready(function() {
     $("#comment_submit").click(function (e) {
         e.preventDefault();
         if(contact.validate()) {
-          $.post('/php/send-email.php',
+          $.post('http://www.kientran.com/user/themes/kientran2010/php/send-email.php',
             $('#contact form').serialize() + "&action=send",
             function (response) {
               if ($.trim(response) == 'OK') {

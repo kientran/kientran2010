@@ -1,11 +1,10 @@
+
 <?php $theme->display('header'); ?>
 
 <div id="content">
 <section id="main_content" class="container">
-
+<!-- entry.single.php -->
 <div id="articles">
-<?php //foreach ($posts as $post ) { ?>
-<?php $post = $posts[0]; ?>
 <article id="post-<?php echo $post->id; ?>" class="<?php echo $post->statusname; ?>">
   <header id="article_head">
     <div class="article_date">
@@ -41,7 +40,6 @@
   </footer>
 </article>
 
-<?php //} ?><!-- End post loop -->
 
 </div>
 

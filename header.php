@@ -22,6 +22,7 @@
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 
   <script type="text/javascript" src="<?php Site::out_url( 'theme' ); ?>/js/site.js"></script>
+  <script type="text/javascript"> var disqus_identifier = <?php echo $post->id; ?>; </script>
 
   <?php $theme->header(); ?>
 </head>
@@ -38,7 +39,7 @@
       </a>
     </div>
     <div id="actions">
-      <a href="http://feeds.feedburner.com/kientran" id="rss">Subscribe</a>  <a href="#" id="twitter">Follow Twitter</a>
+      <a href="http://feeds.feedburner.com/kientran" id="rss">Subscribe</a>  <a href="http://twitter.com/kientran" id="twitter">Follow Twitter</a>
     </div>
     <nav>
     <ul>
