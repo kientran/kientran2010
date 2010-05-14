@@ -13,7 +13,7 @@
   <ul class='sidebar_list'>
     <li><a href='http://blog.kientran.com'>Daily Mind Dump - Random Web Stuff</a></li>
     <li><a href='http://www.seriesregular.com'>Series Regular - TV Show Blog</a></li>
-    <li><a href='htt://github.com/kientran'>My personal Git Hub</a></li>
+    <li><a href='http://github.com/kientran'>My personal Git Hub</a></li>
   </ul>
 
 <!--
