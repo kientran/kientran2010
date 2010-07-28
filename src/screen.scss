@@ -1,4 +1,4 @@
-@import "blueprint/reset";
+//@import "blueprint/reset";
 @import "partials/base";
 @import "compass/css3/gradient";
 @import "compass/utilities/lists/horizontal-list";
@@ -165,7 +165,7 @@ body.two-col {
         }
         input[type="button"]:active, button:active {
           background-color: $header_text_color - #200;
-          @include transition(0.0s);
+          @include transition();
         }
         div#contact_response {
           display: inline;
@@ -253,6 +253,7 @@ body.two-col {
       h1 {
         margin-bottom: 1em; 
         margin-top: 0;
+        font-size: 2em;
       }
     }
     div.article_tags {
@@ -341,6 +342,7 @@ body.two-col {
     h3 {
       margin-top: 1.5em;
       margin-bottom: 0.5em;
+      font-size: 1.5em;
     }
     h3.sidebar_top{
       margin-top: 0em;
@@ -357,7 +359,12 @@ body.two-col {
     $content_columns: 14;
     @include column($content_columns); 
     @include append(2);
-  } 
+    
+    div.archive_title {
+      font-size: 2em;
+      margin-bottom: 1em;
+    }
+} 
   section#main_content {
     padding-top: 150px;
   } 
