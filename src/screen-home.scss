@@ -40,7 +40,7 @@
       a {
         padding: 20px 0px 20px 10px;
         display: block;
-        background: no-repeat url('../images/left-green-divider.png');
+        background: no-repeat url('http://static.kientran.com/images/left-green-divider.png');
         height: 20px;
         font-size: 0.8em;
       }      
@@ -54,7 +54,7 @@
 }
 
 .activeSlide {
-  background: right url('../images/active-pager-bg.png') no-repeat;
+  background: right url('http://static.kientran.com/images/active-pager-bg.png') no-repeat;
 }
 
 #stack {
@@ -83,7 +83,7 @@
 }
 
 #box_center, #box_right {
-  background: url('../images/vertical-rule-blue.png') no-repeat;
+  background: url('http://static.kientran.com/images/vertical-rule-blue.png') no-repeat;
 }
 #box_right {
   @include column(8, true);

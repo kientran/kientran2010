@@ -62,7 +62,7 @@
 #portfolio_pager ul li a {
   padding: 20px 0px 20px 10px;
   display: block;
-  background: no-repeat url("../images/left-green-divider.png");
+  background: no-repeat url("http://static.kientran.com/images/left-green-divider.png");
   height: 20px;
   font-size: 0.8em;
 }
@@ -73,7 +73,7 @@
 
 /* line 56, ../src/screen-home.scss */
 .activeSlide {
-  background: right url("../images/active-pager-bg.png") no-repeat;
+  background: right url("http://static.kientran.com/images/active-pager-bg.png") no-repeat;
 }
 
 /* line 60, ../src/screen-home.scss */
@@ -138,7 +138,7 @@
 
 /* line 85, ../src/screen-home.scss */
 #box_center, #box_right {
-  background: url("../images/vertical-rule-blue.png") no-repeat;
+  background: url("http://static.kientran.com/images/vertical-rule-blue.png") no-repeat;
 }
 
 /* line 88, ../src/screen-home.scss */
