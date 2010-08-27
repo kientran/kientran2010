@@ -19,25 +19,6 @@
 <script type="text/javascript" src="js/jquery.cycle.min.js"></script>
 
 <script type="text/javascript" src="js/site.js"></script>
-<script>
-  $(document).ready( function() {
-
-    $("#contactme").click(function(e){
-        e.preventDefault();
-        $("div#panel").slideDown("slow");   
-        //$("div#pulldown").css("background", "#031740");
-        $("#pulldown a").toggle();
-    }); 
-    
-    $('#stack').cycle( {
-      pager: '#pager',
-      pagerAnchorBuilder: function(idx, slide) {
-        return '<li><a href="#">' + slide.title + '</a></li>';
-      }
-    });
-  });
-
-</script>
 
 </head>
 

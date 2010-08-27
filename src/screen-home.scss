@@ -20,9 +20,12 @@
   @include column(24, true);
   margin: 10px 0px 00px 0px;
   height: 266px;
-  @include linear-gradient( color-stops(#010d26, #031740));
   border-radius: 10px;
   overflow: hidden;
+  @include linear-gradient( color-stops(#010d26, #031740));
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#010d26', EndColorStr='#031740'); /* IE6,IE7 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#010d26', EndColorStr='#031740')"; /* IE8 */
+  
 }
 
 #portfolio_pager {

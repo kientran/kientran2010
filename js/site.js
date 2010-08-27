@@ -1,10 +1,9 @@
 $(document).ready(function() {
     
     // Expand Panel
-    $("#open").click(function(e){
+    $("#open, #contactme").click(function(e){
         e.preventDefault();
         $("div#panel").slideDown("slow");   
-        //$("div#pulldown").css("background", "#031740");
     }); 
     
     // Collapse Panel
@@ -12,14 +11,23 @@ $(document).ready(function() {
         e.preventDefault();
         $("div#panel").slideUp("slow"); 
         $("#contact_response").html('');
-        //$("div#pulldown").css("background", "#010d26");
     });     
     
     // Switch buttons from "Log In | Register" to "Close Panel" on click
-    $("#pulldown a").click(function (e) {
+    $("#pulldown a, #contactme").click(function (e) {
         e.preventDefault();
         $("#pulldown a").toggle();
     }); 
+
+    // jquery Cycle calls
+    if ( $.fn.cycle ) {
+      $('#stack').cycle( {
+        pager: '#pager',
+        pagerAnchorBuilder: function(idx, slide) {
+          return '<li><a href="#">' + slide.title + '</a></li>';
+        }
+      });
+    }
 
     var contact = {
       validate: function () {
