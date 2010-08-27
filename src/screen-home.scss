@@ -1,0 +1,100 @@
+@import "compass/css3/gradient";
+@import "blueprint";
+
+#content header p {
+  font-size: 1.2em;
+}
+
+#portfolio {
+  a {
+    color: #B0CF21;
+  }
+  a:hover {
+    color: white;
+  }
+  p {
+    color: #ccc;
+  }
+  padding-top: 1px;
+  display: block;
+  @include column(24, true);
+  margin: 10px 0px 00px 0px;
+  height: 266px;
+  @include linear-gradient( color-stops(#010d26, #031740));
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#portfolio_pager {
+  @include column(6);
+  height: 100%;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 0.5em;
+    li {
+      a {
+        padding: 20px 0px 20px 10px;
+        display: block;
+        background: no-repeat url('../images/left-green-divider.png');
+        height: 20px;
+        font-size: 0.8em;
+      }      
+    }
+    li:first-child {
+      a {
+        background: none;
+      }
+    }
+  }
+}
+
+.activeSlide {
+  background: right url('../images/active-pager-bg.png') no-repeat;
+}
+
+#stack {
+  @include column(18, true);
+}
+
+.slide {
+  height: 264px;
+}
+.sample {
+  @include column(12);
+  img {
+    width: 470px;
+    height: 264px;
+  }
+}
+
+.slide-text {
+  @include column(6, true);
+  height: 100%;
+}
+
+#box_left, #box_center {
+  @include column(8);
+  min-height: 200px;
+}
+
+#box_center, #box_right {
+  background: url('../images/vertical-rule-blue.png') no-repeat;
+}
+#box_right {
+  @include column(8, true);
+  min-height: 200px;
+}
+
+.content-container {
+  margin: 0px 10px;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  h3 {
+    font-size: .9em;
+  }
+}

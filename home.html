@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Kien Tran | Developer, Sys-admin, Awesome</title>
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/screen-home.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+  <!--[if lt IE 8]>
+      <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <![endif]-->
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.cycle.min.js"></script>
+
+<script type="text/javascript" src="js/site.js"></script>
+<script>
+  $(document).ready( function() {
+
+    $("#contactme").click(function(e){
+        e.preventDefault();
+        $("div#panel").slideDown("slow");   
+        //$("div#pulldown").css("background", "#031740");
+        $("#pulldown a").toggle();
+    }); 
+    
+    $('#stack').cycle( {
+      pager: '#pager',
+      pagerAnchorBuilder: function(idx, slide) {
+        return '<li><a href="#">' + slide.title + '</a></li>';
+      }
+    });
+  });
+
+</script>
+
+</head>
+
+<body class="bp two-col" id="top">
+
+
+<header id="site_head">
+  <div id="head_container">
+  <div id="logo_container" class="container">
+    <div id="logo">
+      <a href="#">
+          Kien Tran
+      </a>
+    </div>
+    <div id="actions">
+      <a href="#" id="rss">Subscribe</a>  <a href="#" id="twitter">Follow Twitter</a>
+    </div>
+    <nav>
+    <ul>
+    <li><a href="#">Resume</a></li>
+    <li><a href="#">Codefolio</a></li>
+    <li><a href="#">Webfolio</a></li>
+    <li><a href="#">Stalk Me</a></li>
+    </ul>
+    </nav>
+
+  </div>
+
+  <div id="panel">
+    <div class="container">
+
+      <div id="about">
+        <ul>
+          <li>Software Developer</li>
+          <li>System Administrator</li>
+          <li>Startup Enthusiast</li>
+          <li>Musican</li>
+          <li>Catholic</li>
+          <li>Texan</li>
+        </ul>
+      </div>
+
+      <div id="contact">
+        <form class="bp">
+          <div id="contact-left">
+            <label for="email">Name</label><br />
+            <input class="field" type="text" name="name" id="name" value="">
+
+            <label for="email">Email</label><br />
+            <input class="field" type="text" name="email" id="email" value="">
+
+            <label for="subject">Subject</label><br />
+            <input class="field" type="text" name="subject" id="subject" value="">
+          </div>
+          <div id="contact-right">
+            <label for="comment">Comment</label><br />
+            <textarea name="comment" id="comment"></textarea>
+          <input type="button" id="comment_submit" value="Say Hello!" />
+          <div id="contact_response"></div>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+  <div id="tab">
+    <div id="tab_container" class="container">
+      <div id="pulldown">
+        <a href="#" id="open">About Me | Contact</a>
+        <a href="#" id="close" >Close Tab</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div id="content">
+<section id="main_content" class="container">
+
+<header>
+<h1>Hello!</h1>
+<p>I'm a Dallas based web developer and IT Consultant.
+I love stuff and blah blah lah
+I love stuff and blah blah lah
+I love stuff and blah blah lah</p>
+</header>
+
+<div id='portfolio'>
+  <div id='portfolio_pager'>
+  <ul id='pager'>
+  </ul>
+  </div>
+  <div id='stack'>
+    <div class='slide' title='Justice Rocks'>
+      <div class='sample'>
+        <img src='..//portfolio/justicerocks.jpg' />
+      </div>
+      <div class='slide-text' >
+        <h3><a href='#'>Justice Rocks</a></h3>
+        <p>Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet.</p>
+        <a href='#'>See More</a>
+      </div>
+    </div><!-- End slide -->
+    <div class='slide' title='Fort Worth Young Adult Ministry'>
+      <div class='sample'>
+        <img src='../portfolio/fwyam.jpg' />
+      </div>
+      <div class='slide-text'>
+        <h3><a href='#'>Young Adult Council</a></h3>
+        <p>Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet.</p>
+        <a href='#'>See More</a>
+      </div>
+    </div><!-- End slide -->
+    <div class='slide' title='University Catholic Center'>
+      <div class='sample'>
+        <img src='../portfolio/ucc.jpg' />
+      </div>
+      <div class='slide-text'>
+        <h3><a href='#'>The UCC</a></h3>
+        <p>Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet.</p>
+        <a href='#'>See More</a>
+      </div>
+    </div><!-- End slide -->
+    <div class='slide' title='Catholic Charities Fort Worth'>
+      <div class='sample'>
+        <img src='../portfolio/ccdofw1.jpg' />
+      </div>
+      <div class='slide-text'>
+        <h3><a href='#'>CC Fort Worth</a></h3>
+        <p>Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet.</p>
+        <a href='#'>See More</a>
+      </div>
+    </div><!-- End slide -->
+  </div>
+</div>
+
+<div id='box_left'>
+<div class='content-container'>
+  <h2>Latest Post</h2>
+    <h3><a href="#">Morbi A Enim In Magna Semper Bibendum. Etiam</a></h3><p>Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet arcu. </p>
+    <p><a href='#'>More Posts</a></p>
+</div>
+</div>
+
+<div id='box_center'>
+<div class='content-container'>
+  <h2>Other Places I Exist</h2>
+  <ul>
+    <li><p><a href='#'>Daily Mind Dump</a> My Daily Link Blog</p></li>
+    <li><p><a href='#'>Series Regular</a> My TV Blog</p></li>
+    <li><p><a href='#'>Full Stack Dev</a> Tutorials covering the full stack of IT development</p></li>
+  </ul>
+</div>
+</div>
+
+<div id='box_right'>
+<div class='content-container'>
+<h2>Get In Touch</h2>
+  <p>I'd love to hear from you!<p>
+  <p><a href="#" id='contactme'>Email Me</a></p>
+</div>
+</div>
+
+
+
+</section>
+</div><!-- div#content -->
+
+<footer id="site_footer">
+  <div id="footer-container" class="container" >
+  <div id="footer-copyright">&copy; 2010 Kien Tran</div>
+  <div id="footer-quote">Augue a nunc nisi? Egestas nunc sit scelerisque et cras rhoncus sed, magna sit enim! Elementum sed <a href="#">adipiscing</a> aliquam quis? Enim, parturient<span id="twitter_date"><a href="#">Tweeted 10 minutes ago</a></span></div>
+  </div>
+</footer>
+
+</body>
+</html>
